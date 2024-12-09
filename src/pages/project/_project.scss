@@ -1,0 +1,98 @@
+@use "../../style/main.scss";
+
+
+.project {
+    margin:2rem 4rem 3rem 4rem;
+
+    .project-img {
+        width:60%;
+
+        img {
+            width:100%;
+        }
+    }
+
+    h2 {
+        margin:3rem 0rem 2rem 0rem;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        margin-top:3rem;
+    }
+
+    .project-button {
+        display:flex;
+        width:170px;
+        justify-content:space-around;
+        align-items:center;
+        text-decoration:none;
+        margin-top:15px;
+        padding:10px;
+        background-color: main.$second-background-color;
+        color:main.$second-color;
+        border-radius:5px;
+        &:hover{
+            color:main.$primary-color;
+        }
+
+        img{
+            width:25px;
+        }
+    }
+
+    .project-competences {
+        padding-left:1rem;
+        border-left: 4px solid main.$second-background-color;
+        margin-left:3rem;
+
+        p{
+            font-style:italic;
+        }
+    }
+}
+ 
+
+/* Media Queries pour Laptop 1024px max */
+@media (max-width: 1024px) {
+    .project{
+        margin:2rem 2rem 3rem 2rem;
+    }
+}
+
+/* Media Queries pour Tablette 768px max */
+@media (max-width: 768px) {
+    .project {
+        .project-button {
+            width: 120px;
+            font-size: 10px;
+            padding:5px;
+        }
+
+        .project-competences {
+            margin-left:1rem;
+        }  
+    }
+}
+
+/* Media Queries pour mobile 425px max */
+@media (max-width: 425px) {
+    .project {
+        .project-img {
+            width:75%;  
+        }
+
+        h3 {
+            font-size:1rem;
+        }
+        
+        .project-competences {
+            font-size:0.7rem;
+        } 
+        }
+
+       
+
+       
+}

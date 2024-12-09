@@ -1,0 +1,60 @@
+@use "../../style/main.scss";
+
+
+.portfolio {
+    background-color: #f3f3f3;
+
+    .space {
+        height: 2rem;
+    }
+
+    #portfolio-title {
+            padding-bottom: 2rem;
+      
+        h2 {
+            margin-bottom:1rem;
+        }
+
+        p{
+            padding-left: 4rem;
+        }
+
+        .portfolio-img {
+            margin-top:2rem;
+            display:flex;
+            justify-content:center;
+
+            img{
+                width:8%;
+            }
+        }
+    }   
+
+    .portfolio-list{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin:1rem;
+        gap:10px;
+        background-color: main.$background-color;
+        padding:1rem;
+        border: black 2px solid;
+    }
+}
+
+
+/* Media Queries pour Tablette 768px max*/
+@media (max-width: 768px) {
+    .portfolio {
+        #portfolio-title {
+            p{
+                padding-left: 2rem;
+            }
+        } 
+        .portfolio-list{
+            flex-direction: column;
+            gap:25px;
+          }
+    }
+}

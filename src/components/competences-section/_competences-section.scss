@@ -1,0 +1,70 @@
+@use "../../style/main.scss";
+
+
+.competences-typewriter {
+    font-size:1rem;
+    margin-top:3rem;
+    margin-bottom:2rem;
+    font-size:10rem;
+  
+    #competences-title {
+        margin-bottom: 1rem;
+    }
+
+    .competences-typewriter-text{
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+
+        .arrow{
+            font-size:2rem;
+        }
+    }
+}
+
+.competences-section {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+
+    .technique, .etre {
+        display:flex;
+        flex-direction: column;;
+        justify-content: center;
+        width:26%;
+        margin:1rem;
+    }
+    
+    .competences-img {
+        display:flex;
+        width:44%;
+        height: 550px;
+        img {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+/* Media Queries pour Laptop 1024px max */
+@media (max-width: 1024px) {
+    .competences-section {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .technique, .etre {
+            width:90%;
+        }
+
+        .competences-img {
+            width:100%;
+            height: 300px;
+            margin:2%;
+            object-fit:contain;
+        }
+    }
+}

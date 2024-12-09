@@ -1,0 +1,33 @@
+@use "../../style/main.scss";
+
+#introducing {
+    .introducing-img {
+        display:flex;
+        justify-content:center;
+        
+        img {
+            width:8%;
+            margin-bottom:3rem
+        }
+    }
+
+    .introducing-text{
+        margin-left: 4rem;
+        margin-right:3rem;;
+    }
+}
+
+
+
+/* Media Queries pour Tablette 768px max */
+@media (max-width: 768px) {
+    #introducing {
+
+        .introducing-text{
+            margin-left: 2rem;
+            margin-right:1rem;;
+        }
+    }
+}
+
+
