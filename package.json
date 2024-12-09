@@ -1,6 +1,6 @@
 {
-  
-  "name": "p12-portfolio-react",
+  "homepage": "https://username.github.io/test-p12-portfolio",
+  "name": "test-p12-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
